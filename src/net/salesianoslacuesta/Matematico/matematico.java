@@ -25,9 +25,16 @@ public abstract class matematico extends investigador {
         System.out.println("La matriz ha sido multiplicada por el factor: " + factor);
     } 
 
+    public void trabajar(int otraMatriz[][] ) {
+        if (otraMatriz.length != 3 || otraMatriz[0].length != 3) {
+            System.out.println("La matriz recibida no es 3x3");
+            return;
+    }
+    
 
 
 
 
 
+}
 }
