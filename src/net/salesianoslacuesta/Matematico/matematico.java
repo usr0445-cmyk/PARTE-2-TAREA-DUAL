@@ -36,11 +36,16 @@ public abstract class matematico extends investigador {
             resultadosActuales[i][j] += otraMatriz[i][j];
         }
     }
-    
+    System.out.println("Se han sumado las matrices correctamente");
+}
 
-
-
-
-
+//Aqui por ultimo ponemos override para el metodo estado del sueldo, para que el matematico pueda solicitar un aumento de sueldo si es necesario
+    @Override
+    public String estadoDelSueldo() {
+    if (sueldo < 1800) {
+        return "El matematico solicita aumento de sueldo";
+    } else {
+        return "El sueldo del matematico es correcto";
+    }
 }
 }
