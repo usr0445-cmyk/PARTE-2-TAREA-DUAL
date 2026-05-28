@@ -30,6 +30,12 @@ public abstract class matematico extends investigador {
             System.out.println("La matriz recibida no es 3x3");
             return;
     }
+
+    for (int i = 0; i < resultadosActuales.length; i++) {
+        for (int j = 0; j < resultadosActuales[i].length; j++) {
+            resultadosActuales[i][j] += otraMatriz[i][j];
+        }
+    }
     
 
 
