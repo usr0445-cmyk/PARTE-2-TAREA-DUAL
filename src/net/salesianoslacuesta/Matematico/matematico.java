@@ -14,4 +14,12 @@ public abstract class matematico extends investigador {
         System.out.println(" Esta trabajando en una matriz 3x3");
     }
 
+    public void trabajar(int factor) {
+        for (int i = 0; i < resultadosActuales.length; i++) {
+            for (int j = 0; j < resultadosActuales[i].length; j++) {
+                resultadosActuales[i][j] *= factor;
+            }
+        }
+    }
+
 }
