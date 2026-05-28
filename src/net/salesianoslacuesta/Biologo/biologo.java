@@ -13,8 +13,15 @@ public class biologo extends investigador {
 
     public void agregarEspecimen(String especimen) {
         especimenes.add(especimen);
-        System.out.println("Especimen agregado: " + especimen);
     }
 
+    @Override
+    public String estadoDelSueldo() {
+        if (sueldo < 1500) {
+            return "El biologo solicita aumento de sueldo";
+        } else {
+            return "El sueldo del biologo es correcto";
+        }
+    }
 
 }
