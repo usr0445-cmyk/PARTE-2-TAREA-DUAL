@@ -1,8 +1,10 @@
 package net.salesianoslacuesta.Quimico;
 import java.util.ArrayList;
+import net.salesianoslacuesta.Investigadores.investigador;
+import net.salesianoslacuesta.TrabajoDual.trabajoDual.TrabajoDual;
 
 //Usamos implements para implementar la interfaz TrabajoDual
-public class quimico extends investigador implements trabajoDual {
+public abstract class quimico extends investigador implements TrabajoDual {
 
     private ArrayList<String> elementos;
 
