@@ -21,4 +21,16 @@ public abstract class investigador {
     }
 
 
+    public int hacerCalculoSuma(int a, int b) {
+        return a + b;
+    }
+
+    public int hacerCalculoResta(int a, int b) {
+        return a - b;
+    }
+
+    public abstract String estadoDelSueldo();
+    public abstract void trabajar();
+
+
 }
