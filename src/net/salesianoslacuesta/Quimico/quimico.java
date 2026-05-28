@@ -14,5 +14,19 @@ public class quimico extends investigador implements trabajoDual {
     public void agregarElemento(String elemento) {
         elementos.add(elemento);
     }
+
+    @Override
+    public void trabajar() {
+        int i = 0;
+        int j = elementos.size() - 1;
+
+        while (i < j) {
+            String temporal = elementos.get(i);
+            elementos.set(i, elementos.get(j));
+            elementos.set(j, temporal);
+            i++;
+            j--;
+        }
+    }
     
 }
