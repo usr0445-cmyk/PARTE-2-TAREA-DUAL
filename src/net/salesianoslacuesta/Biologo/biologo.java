@@ -1,5 +1,7 @@
 package net.salesianoslacuesta.Biologo;
 
-public class biologo {
+import java.util.ArrayList;
+
+public class biologo extends investigador{
     
 }
