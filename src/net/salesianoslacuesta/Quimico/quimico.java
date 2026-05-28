@@ -34,16 +34,25 @@ public class quimico extends investigador implements trabajoDual {
     public void trabajoDual() {
         for (int i = 0; i < elementos.size() - 1; i++) {
             for (int j = 0; j < elementos.size() - i - 1; j++) {
+
                 String actual = elementos.get(j);
                 String siguiente = elementos.get(j + 1);
+
                 if (actual.length() > siguiente.length()) {
                     elementos.set(j, siguiente);
                     elementos.set(j + 1, actual);
                 }
             }
         }
+        if (!elementos.isEmpty()) {
+            elementos.remove(elementos.size() - 1);
+        }
+        System.out.println("Trabajo dual hecho: El quimico ha ordenado y eliminado el elemento mas largo de su lista");
     }
 
+    public ArrayList<String> getElementos() {
+        return elementos;
+    }
 
 
 
