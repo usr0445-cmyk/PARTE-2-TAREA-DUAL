@@ -5,7 +5,6 @@ public class quimico extends investigador implements trabajoDual {
 
     private ArrayList<String> elementos;
 
-    // Creamos este constructor para iniciar los atributos de quimico
     public quimico(String nombre, double sueldo) {
         super(nombre, "Quimica", sueldo);
         this.elementos = new ArrayList<>();
@@ -17,6 +16,7 @@ public class quimico extends investigador implements trabajoDual {
 
     @Override
     public void trabajar() {
+       //Invertimos lista manualmente
         int i = 0;
         int j = elementos.size() - 1;
 
@@ -25,8 +25,27 @@ public class quimico extends investigador implements trabajoDual {
             elementos.set(i, elementos.get(j));
             elementos.set(j, temporal);
             i++;
+            // Decrementamos j para que se mueva hacia el centro de la lista
             j--;
         }
     }
+
+    @Override
+    public void trabajoDual() {
+        for (int i = 0; i < elementos.size() - 1; i++) {
+            for (int j = 0; j < elementos.size() - i - 1; j++) {
+                String actual = elementos.get(j);
+                String siguiente = elementos.get(j + 1);
+                if (actual.length() > siguiente.length()) {
+                    elementos.set(j, siguiente);
+                    elementos.set(j + 1, actual);
+                }
+            }
+        }
+    }
+
+
+
+
     
 }
