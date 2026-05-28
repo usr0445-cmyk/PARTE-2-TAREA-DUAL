@@ -14,4 +14,11 @@ public abstract class investigador {
     }
 
 
+    public void identificacion() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Especialidad: " + especialidad);
+        System.out.println("Sueldo: " + sueldo + " euros");
+    }
+
+
 }
