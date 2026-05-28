@@ -1,13 +1,14 @@
 package net.salesianoslacuesta.Biologo;
-
 import java.util.ArrayList;
-
 import net.salesianoslacuesta.Investigadores.investigador;
 
+//Usamos extends para heredar de la clase investigador
 public class biologo extends investigador {
     
+    //Aqui creamos un atributo para guardar los especimenes del biologo
     private ArrayList<String> especimenes;
 
+    // Creamos este constructor para iniciar los atributos de biologos 
     public biologo(String nombre, double sueldo) {
         super(nombre, "Biologia", sueldo);
         this.especimenes = new ArrayList<>();
@@ -17,6 +18,7 @@ public class biologo extends investigador {
         especimenes.add(especimen);
     }
 
+    //Override para mostrar el estado del sueldo del biologo
     @Override
     public String estadoDelSueldo() {
         if (sueldo < 1500) {
@@ -34,6 +36,7 @@ public class biologo extends investigador {
     
         }
 
+        //Hacemos todo esto con for y if para ordenar la lista de especimenes por cantidad de caracteres
         for (int i = 0; i < especimenes.size() -1; i++) {
             for (int j = 0; j < especimenes.size() - i - 1; j++) {
                 
@@ -48,6 +51,7 @@ public class biologo extends investigador {
                 }
             }
         }
+        //Se elimina el de mayor cantidad de caracteres, que es el ultimo de la lista
         especimenes.remove(especimenes.size() - 1);
         System.out.println("El biologo ha reorganizado y eliminado el especiamen mas largo de su lista");
     }
