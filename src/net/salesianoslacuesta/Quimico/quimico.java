@@ -55,7 +55,4 @@ public class quimico extends investigador implements trabajoDual {
         return elementos;
     }
 
-
-
-    
 }
