@@ -1,9 +1,10 @@
 package net.salesianoslacuesta.Biologo;
 import java.util.ArrayList;
 import net.salesianoslacuesta.Investigadores.investigador;
+import net.salesianoslacuesta.TrabajoDual.trabajoDual.TrabajoDual;
 
 //Usamos extends para heredar de la clase investigador
-public class biologo extends investigador {
+public abstract class biologo extends investigador implements TrabajoDual {
     
     //Aqui creamos un atributo para guardar los especimenes del biologo
     private ArrayList<String> especimenes;
