@@ -1,5 +1,7 @@
 package net.salesianoslacuesta.Matematico;
 
+import net.salesianoslacuesta.Investigadores.investigador;
+
 public abstract class matematico extends investigador {
 
     private int[][] resultadosActuales; 
@@ -20,6 +22,12 @@ public abstract class matematico extends investigador {
                 resultadosActuales[i][j] *= factor;
             }
         }
-    }
+        System.out.println("La matriz ha sido multiplicada por el factor: " + factor);
+    } 
+
+
+
+
+
 
 }
