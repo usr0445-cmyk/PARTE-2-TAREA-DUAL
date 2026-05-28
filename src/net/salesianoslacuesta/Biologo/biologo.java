@@ -10,4 +10,11 @@ public class biologo extends investigador {
         super(nombre, "Biologia", sueldo);
         this.especimenes = new ArrayList<>();
     }
+
+    public void agregarEspecimen(String especimen) {
+        especimenes.add(especimen);
+        System.out.println("Especimen agregado: " + especimen);
+    }
+
+
 }
