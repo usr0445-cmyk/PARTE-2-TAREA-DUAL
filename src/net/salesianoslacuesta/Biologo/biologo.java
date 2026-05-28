@@ -48,6 +48,13 @@ public class biologo extends investigador {
                 }
             }
         }
+        especimenes.remove(especimenes.size() - 1);
+        System.out.println("El biologo ha reorganizado y eliminado el especiamen mas largo de su lista");
     }
+     
+    public ArrayList<String> getEspecimenes() {
+        return especimenes;
+    }
+    
 
 }
