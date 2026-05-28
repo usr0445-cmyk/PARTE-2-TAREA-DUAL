@@ -34,6 +34,7 @@ public abstract class investigador {
 
     //Y dos metodos abstractos para que las clases hijas los implementen, uno para investigar y otro para trabajar
     public abstract void trabajar();
+    public abstract String estadoDelSueldo();
 
 
 }
