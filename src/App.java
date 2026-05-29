@@ -20,7 +20,10 @@ public class App {
 
         investigador investigador = null;   
 
-        if (opcion == 1) {
+           if (opcion == 1) {
+            int[][] matriz = {
+                {1,2,3},{4,5,6},{7,8,9}
+            };
             investigador = new biologo("Biologo", 1500);
         } else if (opcion == 2) {
             investigador = new quimico("Quimico", 1600);
