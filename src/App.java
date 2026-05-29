@@ -29,7 +29,21 @@ public class App {
             investigador = new quimico("Quimico", 1600);
         } else if (opcion == 3) {
             investigador = new matematico("Matematico", 1700, matriz);
+        
+        } else {
+            System.out.println("Opcion no valida");
+            return;
         }
+
+        System.out.println("Has seleccionado: " + investigador.nombre);
+
+        try {
+            System.out.println("Intentando acceder a un indice invalido...");
+            int error = new int [3][0]; //Aqui error forzado
+
+        }
+
+
 
 
     }
