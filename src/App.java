@@ -47,6 +47,9 @@ public class App {
             System.out.println("Ejecucion finalizada.");
         }
 
+        investigador.identificacion();
+        System.out.println(investigador.estadoDelSueldo());
+
 
 
 
