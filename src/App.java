@@ -1,5 +1,9 @@
 
 import java.util.Scanner;
+import net.salesianoslacuesta.Biologo.biologo;
+import net.salesianoslacuesta.Investigadores.investigador;
+import net.salesianoslacuesta.Quimico.quimico;
+
 
 public class App {
     public static void main (String[] args) {
@@ -10,6 +14,12 @@ public class App {
         System.out.println("2. Quimico");
         System.out.print("3. Matematico");
 
-        
+        int opcion = scanner.nextInt();
+        scanner.nextLine();
+
+        //
+        investigador investigador = null;
+
+
     }
 }
