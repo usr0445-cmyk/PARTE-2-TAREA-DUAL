@@ -41,7 +41,7 @@ public class App {
             System.out.println("Intentando acceder a un indice invalido...");
             int error = new int [3][0]; //Aqui error forzado
 
-        } catch (IndexOutOfBoundsException e) {
+            //El IndexOutOfBoundsException controla el error que se produce al intentar acceder a un indice que no existe en un array
             System.out.println("Error: Indice fuera del rango");
         } finally {
             System.out.println("Ejecucion finalizada.");
